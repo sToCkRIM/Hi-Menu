@@ -367,7 +367,10 @@ namespace QuickMenu
 
         private void Kapat(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (btnclick)
+            {
+                Application.Exit();
+            }
         }
 
         private void Klasor(object sender, EventArgs e)
@@ -640,13 +643,19 @@ namespace QuickMenu
 
         private void calc_Click(object sender, EventArgs e)
         {
-            Form3 fr3 = new Form3();
-            fr3.ShowDialog();
+            if (btnclick)
+            {
+                Form3 fr3 = new Form3();
+                fr3.ShowDialog();
+            }
         }
 
         private void cmd_Click(object sender, EventArgs e)
         {
-            Process.Start("cmd.exe");
+            if (btnclick)
+            {
+                Process.Start("cmd.exe");
+            }
         }
 
         private void Secim_KeyDown(object sender, KeyEventArgs e)
@@ -868,15 +877,18 @@ namespace QuickMenu
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            if (Application.OpenForms[0] == this)
+            if (btnclick)
             {
-                Application.Restart();
-            }
-            else
-            {
-                Form1 f = new Form1();
-                f.Show();
-                this.Close();
+                if (Application.OpenForms[0] == this)
+                {
+                    Application.Restart();
+                }
+                else
+                {
+                    Form1 f = new Form1();
+                    f.Show();
+                    this.Close();
+                }
             }
         }
 
@@ -1071,20 +1083,26 @@ namespace QuickMenu
 
         private void btnLang_Click(object sender, EventArgs e)
         {
-            English = true;
-            Turkish = false;
-            btnLang.Visible = false;
-            btnLang2.Visible = true;
-            langs();
+            if (btnclick) 
+            {
+                English = true;
+                Turkish = false;
+                btnLang.Visible = false;
+                btnLang2.Visible = true;
+                langs();
+            }
         }
 
         private void btnLang2_Click(object sender, EventArgs e)
         {
-            Turkish = true;
-            English = false;
-            btnLang.Visible = true;
-            btnLang2.Visible = false;
-            langs();
+            if (btnclick)
+            {
+                Turkish = true;
+                English = false;
+                btnLang.Visible = true;
+                btnLang2.Visible = false;
+                langs();
+            }
         }
     }
 }
