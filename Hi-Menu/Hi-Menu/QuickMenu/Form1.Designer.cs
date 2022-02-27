@@ -81,7 +81,7 @@ namespace QuickMenu
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(38)))));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(106)))));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(321, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 23);
@@ -181,11 +181,10 @@ namespace QuickMenu
             this.comboBox1.ForeColor = System.Drawing.SystemColors.Info;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(12, 11);
+            this.comboBox1.MaxLength = 48;
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(293, 21);
             this.comboBox1.TabIndex = 24;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            this.comboBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBox1_KeyDown);
             // 
             // button4
             // 
@@ -210,7 +209,7 @@ namespace QuickMenu
             this.btnLocationDefault,
             this.ekleToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(228, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(228, 92);
             // 
             // butonlarınYerleriniDeğiştirToolStripMenuItem
             // 
@@ -252,7 +251,7 @@ namespace QuickMenu
             this.oyunEkleToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.oyunEkleToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.oyunEkleToolStripMenuItem.Name = "oyunEkleToolStripMenuItem";
-            this.oyunEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oyunEkleToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.oyunEkleToolStripMenuItem.Text = "Oyun Ekle";
             this.oyunEkleToolStripMenuItem.Click += new System.EventHandler(this.oyunEkleToolStripMenuItem_Click);
             // 
@@ -261,7 +260,7 @@ namespace QuickMenu
             this.programEkleToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.programEkleToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.programEkleToolStripMenuItem.Name = "programEkleToolStripMenuItem";
-            this.programEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.programEkleToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.programEkleToolStripMenuItem.Text = "Program Ekle";
             this.programEkleToolStripMenuItem.Click += new System.EventHandler(this.programEkleToolStripMenuItem_Click);
             // 
@@ -270,7 +269,7 @@ namespace QuickMenu
             this.siteEkleToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.siteEkleToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.siteEkleToolStripMenuItem.Name = "siteEkleToolStripMenuItem";
-            this.siteEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.siteEkleToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.siteEkleToolStripMenuItem.Text = "Site Ekle";
             this.siteEkleToolStripMenuItem.Click += new System.EventHandler(this.siteEkleToolStripMenuItem_Click);
             // 
@@ -399,7 +398,7 @@ namespace QuickMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(106)))));
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(913, 87);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.cmd);

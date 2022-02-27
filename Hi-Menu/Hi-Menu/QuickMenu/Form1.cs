@@ -134,19 +134,6 @@ namespace QuickMenu
                     Application.Exit();
                 }
             }
-                calc.FlatStyle = FlatStyle.Flat;
-                button5.FlatStyle = FlatStyle.Flat;
-                button4.FlatStyle = FlatStyle.Flat;
-                button6.FlatStyle = FlatStyle.Flat;
-                button1.FlatStyle = FlatStyle.Flat;
-                button3.FlatStyle = FlatStyle.Flat;
-                cmd.FlatStyle = FlatStyle.Flat;
-                button18.FlatStyle = FlatStyle.Flat;
-                deleyt.FlatStyle = FlatStyle.Flat;
-                btnLang.FlatStyle = FlatStyle.Flat;
-                btnLang2.FlatStyle = FlatStyle.Flat;
-
-                this.BackColor = Color.FromArgb(19, 21, 22);
 
                 if (!Directory.Exists(@"C:\\Hi-Menu"))
                 {
@@ -668,11 +655,6 @@ namespace QuickMenu
             e.SuppressKeyPress = true;
         }
 
-        private void comboBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            e.SuppressKeyPress = true;
-        }
-
         private void xmlctrl4()
         {
             string dosya_dizini = @"C:\\Hi-Menu\\Lang\\Turkish.xml";
@@ -824,11 +806,6 @@ namespace QuickMenu
             {
                 calistir = true;
             }
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
         }
         private void button4_Click(object sender, EventArgs e)
         {
